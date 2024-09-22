@@ -1,18 +1,17 @@
-import { Link } from '@nextui-org/link';
 import React from 'react';
+import style from './bg-footer.module.css'
+import ContactsFooter from './contacts-footer';
+import MapLinksFooter from './map-links-footer';
+import Newletter from './newletter';
 
 const Footer = () => {
     return (
-        <footer className="bg-app w-full flex items-center justify-center p-4">
-            <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-            >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
-            </Link>
+        <footer className={`${style.footer} text-white footer mt-6 bg-app w-full flex items-center justify-center p-4`}>
+            <div className="grid grid-cols-3 gap-4">
+                <ContactsFooter />
+                <MapLinksFooter />
+                <Newletter />
+            </div>
         </footer>
     );
 }
