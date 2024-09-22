@@ -1,3 +1,4 @@
+"use client"
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -21,16 +22,18 @@ import {
   Logo,
 } from "@/components/icons";
 import InputSearch from "./input-search";
+import LogoApp from "@/components/global/logo-app";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
 
+  const pathName =  usePathname()
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar maxWidth="xl" className="fixed bg-white shadow">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <LogoApp />
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -38,8 +41,7 @@ export const Navbar = () => {
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  ` ${pathName === item.href && 'text-app border-b border-app'} data-[active=true]:text-primary data-[active=true]:font-medium hover:border-b text-xs pb-1 hover:text-app hover:border-app`,
                 )}
                 color="foreground"
                 href={item.href}

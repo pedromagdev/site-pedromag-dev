@@ -1,6 +1,5 @@
 import React from 'react';
 import { footerContacts } from './data-footer';
-import { Link } from '@nextui-org/link';
 import { Button } from '@nextui-org/button';
 
 const ContactsFooter = () => {

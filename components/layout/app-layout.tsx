@@ -6,7 +6,7 @@ const AppLayout = ({children}:{children: React.ReactNode}) => {
     return (
         <div className="relative flex flex-col h-screen">
             <Navbar/>
-            <main className="container mx-auto max-w-6xl pt-16 px-6 flex-grow">
+            <main className="container mt-4 mx-auto max-w-6xl pt-16 px-6 flex-grow">
               {children}
             </main>
             <Footer/>
