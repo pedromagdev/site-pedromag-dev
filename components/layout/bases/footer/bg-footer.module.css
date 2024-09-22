@@ -2,5 +2,6 @@
 .footer{
     background-image: url("/images/masks/footer.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position:center;
   }

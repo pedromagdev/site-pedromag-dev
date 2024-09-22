@@ -9,18 +9,19 @@ export const footerContacts = {
         label: "Entre em contacto",
         links: [
             {
-                label: "Luanda, Viana - Jacinto Tchipa",
+                label: "Luanda, Viana - Zango 8000 - Bloco H 8",
                 icon: <RiMapPin2Fill />,
             },
             {
-                label: "+941 452 153 | 951 73 74 17",
-                icon: <FaPhoneAlt />
-            },
-            {
-                label: "geral@calugasoft.com",
+                label: "pedromag.ltda@gmail.com",
                 icon: <FaEnvelope />
 
-            }
+            },
+            {
+                label: "926 480 274",
+                icon: <FaPhoneAlt />
+            },
+
         ],
         iconsSocial: [
             {

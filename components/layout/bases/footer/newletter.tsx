@@ -5,9 +5,9 @@ import { BsSendFill } from "react-icons/bs";
 
 const Newletter = () => {
     return (
-        <div>
-            <h2>Newsletter</h2>
-            <p>
+        <div className='space-y-4'>
+            <h2>Inscreva-se na Newsletter</h2>
+            <p className=''>
                 Deixe seu email, para estar
                 na nossa área de membro,
                 receba actualizações sobre
@@ -16,7 +16,7 @@ const Newletter = () => {
             <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
                 <Input 
                 type="email"
-                 placeholder="Enter your email" 
+                 placeholder="Coloque o seu email" 
                 endContent={
                 <BsSendFill className='text-app' />
             } 

@@ -7,11 +7,11 @@ const ContactsFooter = () => {
     return (
         <div className="space-y-4">
             <h2> {footerContacts.contacts.label} </h2>
-            <ul className='space-y-2'>
+            <ul className='space-y-3'>
                 {footerContacts.contacts.links.map((link, index) => (
-                    <li key={index} className='flex items-center gap-4'>
+                    <li key={index} className='flex items-center gap-2'>
                         <span className='text-xl'> {link.icon} </span>
-                        <span> {link.label} </span>
+                        <span className='text-xs'> {link.label} </span>
                     </li>
                 ))}
             </ul>
