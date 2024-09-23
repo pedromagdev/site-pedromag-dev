@@ -4,7 +4,7 @@ import { services } from './data-home';
 const Services = () => {
     return (
         <section className=''>
-            <ul className='grid grid-cols-3 gap-3 max-[992px]:grid-cols-2 max-[602px]:grid-cols-1   '>
+            <ul className='grid grid-cols-3 gap-3 max-[992px]:grid-cols-2 max-[702px]:grid-cols-1 '>
                 {services.map((service, index)=>(
                     <li key={index} className='p-4 space-y-4 shadow-md border'>
                         <div className='flex gap-2 items-end text-app'>

@@ -29,8 +29,9 @@ type ProgressbarProps = {
 export const Navbar = ({target}:ProgressbarProps) => {
 
   const {scroll, pathName} = useScrollHeader(target)
+  const veryPathName = pathName === "/"
   return (
-    <NextUINavbar maxWidth="xl" isBlurred={false} className={`fixed ${pathName === "/" && !scroll ? 'bg-transparent' :'bg-white shadow' }`} >
+    <NextUINavbar maxWidth="xl" isBlurred={false} className={`fixed ${veryPathName && !scroll ? 'bg-transparent' :'bg-white shadow' }`} >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -63,7 +64,8 @@ export const Navbar = ({target}:ProgressbarProps) => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          {scroll && <PartEnDFooter />}
+          {veryPathName && scroll && <PartEnDFooter /> }
+          {!veryPathName && <PartEnDFooter /> }
         </NavbarItem>
       </NavbarContent>
 
