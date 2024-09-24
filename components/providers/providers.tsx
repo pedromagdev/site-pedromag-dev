@@ -8,19 +8,16 @@ import { ThemeProviderProps } from "next-themes/dist/types";
 import { Provider as JotaiProvider } from "jotai";
 export interface ProvidersProps {
   children: React.ReactNode;
-  themeProps?: ThemeProviderProps;
 }
 
-export function Providers({ children, themeProps }: ProvidersProps) {
+export function Providers({ children }: ProvidersProps) {
   const router = useRouter();
 
   return (
     <NextUIProvider navigate={router.push}>
-      <NextThemesProvider {...themeProps}>
         <JotaiProvider>
           {children}
         </JotaiProvider>
-      </NextThemesProvider>
     </NextUIProvider>
   );
 }
