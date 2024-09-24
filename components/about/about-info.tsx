@@ -13,7 +13,7 @@ const AboutInfo = () => {
                         src='/images/banners/team-pedromag-2.jpeg'
                         className='rounded-md'
                     />
-                    <div className="absolute bottom-0 z-[2000] shadow-sm bg-app p-4 rounded-tr-sm text-white ">
+                    <div className="absolute bottom-0 z-[2000] shadow-sm bg-app p-4 rounded-tr-sm rounded-bl-sm opacity-95 text-white ">
                         <h2 className='flex items-center gap-2'>
                             <span className='text-2xl'>
                                 <RiTeamFill />
