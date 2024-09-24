@@ -1,13 +1,13 @@
 "use client"
-import { Accordion, AccordionItem, Image } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 import React from 'react';
 import { title } from '../primitives';
 import { RiTeamFill } from "react-icons/ri";
 
 const AboutInfo = () => {
     return (
-        <section className=' w-full px-14'>
-            <div className="grid grid-cols-2 gap-4">
+        <section className=' w-full px-14 max-[992px]:px-3'>
+            <div className="grid grid-cols-2 gap-4 max-[992px]:grid-cols-1 ">
                 <div className='relative'>
                     <Image
                         src='/images/banners/team-pedromag-2.jpeg'
@@ -30,20 +30,18 @@ const AboutInfo = () => {
                         oferecer soluções completas para compra, venda e locação de imóveis.
                         Com uma equipe de especialistas comprometida em entender as necessidades
                         de cada cliente, nossa missão é tornar o processo de aquisição ou venda de propriedades simples, seguro e eficiente.
-                        Atuando com transparência e excelência, a Pedromag busca sempre superar as expectativas, proporcionando um atendimento personalizado e
-                        resultados que agregam valor em cada negociação.
-                        {/* Seja para residências, comerciais ou investimentos, 
-                         estamos aqui para transformar sonhos em realidade.                        
-                         de eficiência energética em sua casa personalizada.
-                        Créditos fiscais federais para alguns materiais verdes
-                        podem permitir que você deduza tanto.
-                        Por fim, a construção personalizada lhe
-                        dará mais pelo seu dinheiro.
-                        Com casas personalizadas. */}
                     </p>
+
+                    <div className='space-y-2'>
+                        <h2 className='font-bold text-2xl'>Compremetimento!</h2>
+                            <p>
+                            Atuando com transparência e excelência, a Pedromag busca sempre superar as expectativas, proporcionando um atendimento personalizado e
+                            resultados que agregam valor em cada negociação.
+                            </p>
+                    </div>
                 </div>
-            </div >
-        </section >
+            </div>
+        </section>
     );
 }
 

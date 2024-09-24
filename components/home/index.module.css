@@ -4,3 +4,11 @@
     background-image: url("/images/banners/slider_bg.jpg");
     background-size: cover;
 }
+
+
+.mask{
+    background-image: url("/images/masks/mask-3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

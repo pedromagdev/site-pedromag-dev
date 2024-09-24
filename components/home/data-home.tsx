@@ -6,17 +6,17 @@ import { IoSettings } from "react-icons/io5";
 export const services = [
     {
         name: "Venda de Casas",
-        description: "Um construtor experiente provavelmente tem longo prazo com fornecedores e trabalhadores, derrubando.",
+        description: "Compre casas acabadas ou inacabadas, oferecendo opções que atendem a diferentes perfis e necessidades dos nossos clientes.",
         icon: <HiMiniHomeModern />
     },
     {
         name: "Pagamentos por parcelas",
-        description: "Um construtor experiente provavelmente tem longo prazo com fornecedores e trabalhadores, derrubando.",
+        description: "Oferecemos a opção de pagamento em parcelas mensais. Entendemos que cada cliente tem sua realidade financeira, por isso disponibilizamos condições flexíveis.",
         icon: <GiTwoCoins />
     },
     {
         name: "Construções confiavéis",
-        description: "Um construtor experiente provavelmente tem longo prazo com fornecedores e trabalhadores, derrubando.",
+        description: "A Pedromag, garante construções de casas confiáveis, com foco na qualidade, segurança e durabilidade. Trabalhamos com uma equipe de profissionais experientes e parceiros renomados.",
         icon: <IoSettings />
     }
 ]

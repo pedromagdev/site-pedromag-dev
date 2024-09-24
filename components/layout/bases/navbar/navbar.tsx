@@ -31,7 +31,7 @@ export const Navbar = ({target}:ProgressbarProps) => {
   const {scroll, pathName} = useScrollHeader(target)
   const veryPathName = pathName === "/"
   return (
-    <NextUINavbar maxWidth="xl" isBlurred={false} className={`fixed ${veryPathName && !scroll ? 'bg-transparent' :'bg-white shadow' }`} >
+    <NextUINavbar maxWidth="xl" isBlurred={false} className={`z-[5000] fixed ${veryPathName && !scroll ? 'bg-transparent' :'bg-white shadow' }`} >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -73,7 +73,7 @@ export const Navbar = ({target}:ProgressbarProps) => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="z-[5000] ">
         <InputSearch />
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navItems.map((item, index) => (
