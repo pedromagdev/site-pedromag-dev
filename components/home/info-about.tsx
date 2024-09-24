@@ -5,11 +5,15 @@ import { GoArrowUpRight } from "react-icons/go";
 const InfoAbout = () => {
     return (
         <section className='grid grid-cols-2 gap-4 max-[992px]:grid-cols-1 '>
-            <Image
-                src='/images/banners/banner-1.jpg'
-            />
+            <div className="h-[400px] w-full ">
+                <Image
+                    src='/images/banners/banner-1.jpg'
+                    removeWrapper={false}
+                />
+            </div>
+
             <div>
-                <div className='pt-4 space-y-4 max-[992px]:pt-0 '>
+                <div className='pt-4 space-y-3 max-[992px]:pt-0 '>
                     <h2 className='font-bold text-3xl'>
                         Confiança nos melhores
                     </h2>
