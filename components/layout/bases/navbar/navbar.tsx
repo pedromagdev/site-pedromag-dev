@@ -8,20 +8,15 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Link } from "@nextui-org/link";
-import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  GithubIcon,
-} from "@/components/icons";
 import InputSearch from "./input-search";
 import LogoApp from "@/components/global/logo-app";
 import PartEnDFooter from "./part-end-heeader";
 import { useScrollHeader } from "@/hooks/scroll";
+import { useModal } from "@/hooks";
 
 type ProgressbarProps = {
   target: React.RefObject<HTMLElement>;
@@ -29,7 +24,9 @@ type ProgressbarProps = {
 export const Navbar = ({target}:ProgressbarProps) => {
 
   const {scroll, pathName} = useScrollHeader(target)
-  const veryPathName = pathName === "/"
+  const veryPathName = pathName === "/";
+  const {isOpen} = useModal()
+
   return (
     <NextUINavbar maxWidth="xl" isBlurred={false} className={`z-[5000] fixed ${veryPathName && !scroll ? 'bg-transparent' :'bg-white shadow' }`} >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">

@@ -1,5 +1,6 @@
 import { atom, useAtom } from "jotai"
 import { usePathname } from "next/navigation"
+import { atomModalAppointment } from "./atoms"
 
 
 export const useVeryPath  =()=>{
@@ -9,4 +10,11 @@ export const useVeryPath  =()=>{
 
     
     return {homePath}
+}
+
+
+export function useModal(){
+    const [isOpen, setIsOpen] = useAtom(atomModalAppointment)
+
+    return {isOpen, setIsOpen}
 }

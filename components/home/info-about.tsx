@@ -13,7 +13,7 @@ const InfoAbout = () => {
                     className='rounded-sm'
                     removeWrapper={false}
                 />
-                <div className="absolute bottom-0 right-0 z-[2000] shadow-sm bg-app p-4 rounded-tl-sm rounded-br-sm opacity-95 text-white ">
+                <div className="absolute bottom-0 right-0 z-[200] shadow-sm bg-app p-4 rounded-tl-sm rounded-br-sm opacity-95 text-white ">
                     <h2 className='flex items-center gap-2'>
                         <span className='text-2xl'>
                             <MdSecurity />

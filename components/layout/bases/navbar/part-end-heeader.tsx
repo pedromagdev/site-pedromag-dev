@@ -1,15 +1,15 @@
 "use client"
 import { ButtonApp } from "@/components/ui/button-app";
-import { BsClockHistory } from "react-icons/bs";
 import InputSearch from "./input-search";
+import { useModal } from "@/hooks";
 
 const PartEnDFooter = () => {
-
+  const {setIsOpen} = useModal()
     return (
         <div className="flex items-center gap-8">
             <InputSearch />
             <div className="">
-                <ButtonApp size="md">
+                <ButtonApp onClick={()=>setIsOpen(true)} size="md">
                     Agendar
                 </ButtonApp>
             </div>
