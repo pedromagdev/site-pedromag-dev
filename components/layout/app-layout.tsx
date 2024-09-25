@@ -14,6 +14,7 @@ const AppLayout = ({children}:{children: React.ReactNode}) => {
 
     return (
         <div ref={refNavbar} className="relative flex flex-col h-screen">
+
             {!isOpen && <Navbar target={refNavbar} />}
             {pathName === '/' && <BannerHome /> }
             <main className="container mt-4 mx-auto max-w-6xl pt-16 px-6 flex-grow">
