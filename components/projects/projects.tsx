@@ -9,20 +9,6 @@ const Projects = () => {
         <h1 className="text-3xl font-bold"> Nossos condominios </h1>
         <ul className="grid grid-cols-3 gap-4 max-[992px]:grid-cols-2 max-[702px]:grid-cols-1">
           {dataProjects.map((project, index) => (
-            // <Card key={index} className='rounded'>
-            //     <CardBody className="overflow-visible py-2">
-            //         <Image
-            //             src={project.image}
-            //              className="object-cover"
-            //         />
-            //     </CardBody>
-            //     <CardHeader className="pb-0 pt-2 px-4 flex-col items-start my-4">
-            //         <h2 className='font-bold'>
-            //             {project.name}
-            //         </h2>
-            //     </CardHeader>
-            // </Card>
-
             <Card
               key={index}
               isFooterBlurred
