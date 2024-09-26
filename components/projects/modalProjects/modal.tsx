@@ -10,12 +10,12 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <ModalBody>
           <Image
             alt="Imagem do Condomínio"
-            src={project.image || "https://via.placeholder.com/400"} // Usando imagem do projeto ou um placeholder
+            src={project.image || "https://via.placeholder.com/400"} 
             width="100%"
             height="200"
           />
           <p className="mt-2">
-            {project.description || "Descrição não disponível."} {/* Exemplo de descrição */}
+            {project.description || "Descrição não disponível."} 
           </p>
         </ModalBody>
         <ModalFooter>
