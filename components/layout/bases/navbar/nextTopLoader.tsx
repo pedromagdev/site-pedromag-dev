@@ -3,9 +3,9 @@ import NextTopLoader from "nextjs-toploader";
 const Loader = () => {
   return (
     <NextTopLoader
-      color="#2299DD"
+      color="#0F2BCD"
       initialPosition={0.08}
-      crawlSpeed={200}
+      crawlSpeed={100}
       height={3}
       crawl={true}
       showSpinner={true}
