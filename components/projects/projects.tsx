@@ -103,7 +103,7 @@ const Projects = () => {
                 src={project.image}
                 width="100%"
               />
-              <CardFooter className="bg-app/70 justify-between border-white/10 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              <CardFooter className="bg-app/60 justify-between border-white/10 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                 <p className="text-tiny text-white">{project.name}</p>
                 <Button
                   className="text-tiny text-white bg-black/20"

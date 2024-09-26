@@ -4,7 +4,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Image
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal backdrop='blur' isOpen={isOpen} onClose={onClose}>
       <ModalContent>
         <ModalHeader className="flex flex-col gap-1">{project.name}</ModalHeader>
         <ModalBody>
@@ -19,7 +19,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           </p>
         </ModalBody>
         <ModalFooter>
-          <Button color="danger" variant="light" onPress={onClose}>
+          <Button className="bg-app hover:bg-app-500 text-white hover:text-black" variant="light" onPress={onClose}>
             Fechar
           </Button>
         </ModalFooter>

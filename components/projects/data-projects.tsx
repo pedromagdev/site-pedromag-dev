@@ -8,7 +8,8 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     },
     {
         name: "Condominio Residencial",
@@ -17,7 +18,8 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     },
     {
         name: "Gallax Residencial",
@@ -26,7 +28,8 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     },   {
         name: "Vila Pedromag",
         image: "/images/projects/project-2.jpeg",
@@ -34,7 +37,8 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     },
     {
         name: "Vila Pedromag",
@@ -43,7 +47,8 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     },
     {
         name: "Vila Pedromag",
@@ -52,6 +57,7 @@ export const dataProjects = [
             {
                 path: ""
             }
-        ]
+        ], 
+        description: ""
     }
 ]
